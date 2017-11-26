@@ -3,12 +3,13 @@ Empty OpenGL Project to be used as a base for other projects.
 The sublime build script is designed to be run on MinGW G++ which will need to be configured into the PATH of the windows shell.
 
 ## How to setup
-1.  Download GLFW binaries (Project was compiled with version 3.2.1, http://www.glfw.org/download.html)
+1. Download and install Cygwin (https://www.cygwin.com/)
+   * Remember to add additional libraries for OpenGL.
+2.  Download GLFW binaries (Project was compiled with version 3.2.1, http://www.glfw.org/download.html)
    * Go into the lib-mingw-w64 or lib-mingw and copy all the contents to the directory called lib/.
    * A readme is provided in the lib directory to indicate this.
    * Go into the include directory and copy all the contents to the directory called include/ under the main project folder.
-  
-2.  Download GL3W (https://github.com/skaslev/gl3w)
+3.  Download GL3W (https://github.com/skaslev/gl3w)
    * Go into the include directory and copy all the contents to the directory called include/ under the main project folder.
    * Run gl3w_gen.py using Python 3 (https://www.python.org/). This will generate gl3w.h and gl3w.c.
    * Copy gl3w.h into the include/GL/ directory (Overwrite pre-existing if any).
